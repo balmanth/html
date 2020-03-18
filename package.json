@@ -1,0 +1,41 @@
+{
+  "name": "@balmanth/html",
+  "description": "Helper functions for working with HTML.",
+  "version": "0.0.0-alpha",
+  "type": "module",
+  "main": "release/module.js",
+  "module": "release/module.js",
+  "typings": "typings/module.d.ts",
+  "keywords": [
+    "html helper",
+    "html functions"
+  ],
+  "author": {
+    "name": "Silas B. Domingos",
+    "email": "hello@balmante.eti.br",
+    "url": "https://balmante.eti.br"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balmanth/html.git"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "typescript": "^3.8.3"
+  },
+  "prettier": {
+    "printWidth": 125,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "semi": true
+  },
+  "scripts": {
+    "build": "npm run clean && npm run make",
+    "clean": "rm -rf ./release",
+    "make": "npx tsc -p ./source"
+  }
+}
